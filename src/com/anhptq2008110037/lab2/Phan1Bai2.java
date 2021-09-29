@@ -1,6 +1,7 @@
-package BaiTapLab2;
+package com.anhptq2008110037.lab2;
+
 import java.util.Scanner;
-public class Bai2 {
+public class Phan1Bai2 {
         private static Scanner scanner = new Scanner(System.in);
         public static void main(String[] args) {
             System.out.print("Nhập hệ số bậc 2, a =");
@@ -9,7 +10,7 @@ public class Bai2 {
             float b = scanner.nextFloat();
             System.out.print("Nhập hằng số tự do, c =");
             float c = scanner.nextFloat();
-            Bai2.giaiPTBac2(a, b, c);
+            Phan1Bai2.giaiPTBac2(a, b, c);
         }
         public static void giaiPTBac2(float a, float b, float c) {
 // kiểm tra các hệ số

@@ -1,4 +1,5 @@
-package BaiTapLab1;
+package com.anhptq2008110037.lab1;
+
 
 import java.util.Scanner;
 

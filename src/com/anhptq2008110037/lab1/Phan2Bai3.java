@@ -1,4 +1,5 @@
-package BaiTapLab1;
+package com.anhptq2008110037.lab1;
+
 import java.util.Scanner;
 public class Phan2Bai3 {
     public static void main (String[] args)

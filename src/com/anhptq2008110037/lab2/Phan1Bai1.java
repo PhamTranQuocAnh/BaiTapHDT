@@ -1,6 +1,6 @@
-package BaiTapLab2;
+package com.anhptq2008110037.lab2;
 import java.util.Scanner;
-public class Bai1 {
+public class Phan1Bai1 {
         public static void main(String[] args) {
             Scanner giaiPTBac1 = new Scanner(System.in);
             System.out.println("Nhập vào a: ");
