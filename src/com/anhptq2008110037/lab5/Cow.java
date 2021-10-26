@@ -11,12 +11,10 @@ public class Cow {
         weight = 15;
         age = 1;
     }
-    // hàm tạo 1 tham số
     Cow (double w){
         weight = w;
         age = 2;
     }
-    // hàm tạo 2 tham số
     Cow (double w, double a){
         weight = w;
         age = a;
