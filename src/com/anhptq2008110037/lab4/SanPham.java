@@ -4,9 +4,6 @@
 */
 package com.anhptq2008110037.lab4;
 
-import javax.print.attribute.standard.DocumentName;
-import javax.security.auth.callback.TextInputCallback;
-
 public class SanPham {
     private String tenSanPham;
     private double donGia;
