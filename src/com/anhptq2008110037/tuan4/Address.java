@@ -2,7 +2,7 @@
 *  crated date: 13 thg 10, 2021
 *  author: PhamTranQuocAnh
 */
-package com.anhptq2008110037.lab4;
+package com.anhptq2008110037.tuan4;
 
 public class Address {
     int diaChi;

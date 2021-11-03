@@ -10,7 +10,8 @@ public class Amoeba extends Shape {
     private int toaDoX;
     private int toaDoY;
 
-    Amoeba(String n, int x, int y) {
+    Amoeba( String n, int x, int y) {
+    
         nameFile = n;
         toaDoX = x;
         toaDoY = y;

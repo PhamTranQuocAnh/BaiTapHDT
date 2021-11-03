@@ -2,7 +2,7 @@
 *  crated date: 13 thg 10, 2021
 *  author: PhamTranQuocAnh
 */
-package com.anhptq2008110037.lab5;
+package com.anhptq2008110037.tuan5;
 
 public class MayTinhTestDrive {
     public static void main(String[] args) {
