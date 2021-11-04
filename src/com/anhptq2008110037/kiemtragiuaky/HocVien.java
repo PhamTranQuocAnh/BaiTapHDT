@@ -3,62 +3,63 @@
 *  author: PhamTranQuocAnh
 */
 package com.anhptq2008110037.kiemtragiuaky;
-public class HocVien extends Nguoi {
-    private String tenHocVien;
-    private String diaChiHocVien;
-    private float diemMonhoc1;
-    private float diemMonhoc2;
-    private int soLuongHV = 0;
-    private float diemTB;
-    
-    HocVien(){};
-    HocVien (float diemMonhoc1, float diemMonhoc2){
-        this.diemMonhoc1 = diemMonhoc1;
-        this.diemMonhoc2 = diemMonhoc2;
-    }
-    HocVien (String ten, String diaChi, float diemMonhoc1, float diemMonhoc2 ){
-        super(ten, diaChi);
-        this.diemMonhoc1 = diemMonhoc1;
-        this.diemMonhoc2 = diemMonhoc2;
-    
+private String tenHocVien;
+private String diaChiHocVien;
+private float diemMonHoc1;
+private float diemMonHoc2;
+static  int soLuongHV = 0;
+private float diemTB;
 
-        
-    }
-    public String getTenHocVien() {
-        return tenHocVien;
-    }
+HocVien(){};
+HocVien(float diemMonHoc1, float diemMonHoc2){
+    this.diemMonHoc1 = diemMonHoc1;
+    this.diemMonHoc2 = diemMonHoc2;
+}
 
-    public String getDiaChiHocVien(){
-        return diaChiHocVien;
-    }
+HocVien(String ten, String diaChi, float diemMonHoc1, float diemMonHoc2) {
+    super(ten, diaChi);
+    this.diemMonHoc1 = diemMonHoc1;
+    this.diemMonHoc2 = diemMonHoc2;
+}
 
-    private float setDiemTB(){
-        diemTB = (diemMonhoc1 + diemMonhoc2) / 2;
-        return diemTB;
-    }
-    public float getDiemTB(){
-        return setDiemTB();
-    }
+HocVien(String hoTen, String diaChi, float diemTB){
+    super(hoTen, diaChi);
+    this.diemTB = diemTB;
+}
+public String getTenHocVien() {
+    return tenHocVien;
+}
 
-    public void setDiemMonhoc1(float diemMonhoc1) {
-        if (diemMonhoc1 >0 && diemMonhoc1 <10) {
-            this.diemMonhoc1 = diemMonhoc1;
-        } else  
-            System.out.println("Vui lòng nhập lại");
-    }
-    public void setDiemMonhoc2(float diemMonhoc2) {
-        if (diemMonhoc2 >0 && diemMonhoc2 <10) {
-            this.diemMonhoc2 = diemMonhoc2;
-        } else  
-            System.out.println("Vui lòng nhập lại");
-    }
+public String getDiaChiHocVien(){
+    return diaChiHocVien;
+}
 
-    
+private float setDiemTB(){
+    diemTB = (diemMonHoc1 + diemMonHoc2) / 2;
+    return diemTB;
+}
+public float getDiemTB(){
+    return setDiemTB();
+}
+
+public void setDiemMonHoc1(float diemMonHoc1) {
+    if (diemMonHoc1 >0 && diemMonHoc1 <10) {
+        this.diemMonHoc1 = diemMonHoc1;
+    } else  
+        System.out.println("Vui lòng nhập lại");
+}
+public void setDiemMonHoc2(float diemMonHoc2) {
+    if (diemMonHoc2 >0 && diemMonHoc2 <10) {
+        this.diemMonHoc2 = diemMonHoc2;
+    } else  
+        System.out.println("Vui lòng nhập lại");
+}
 
 
-    @Override
-    public String toString() {
-        return "Tên học viên: " + getTenHocVien() + " Địa chỉ học viên: " + getDiaChiHocVien() +
-        " Điểm trung bình của học viên: " + diemTB;
-    }
+
+
+@Override
+public String toString() {
+    return super.toString() + "Điểm trung bình: " + getDiemTB();
+}
 }
