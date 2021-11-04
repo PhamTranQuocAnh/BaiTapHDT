@@ -11,9 +11,10 @@ public class HocVien extends Nguoi {
     private int soLuongHV = 0;
     private float diemTB;
     
+    HocVien(){};
     HocVien (float diemMonhoc1, float diemMonhoc2){
         this.diemMonhoc1 = diemMonhoc1;
-        this.diemMonhoc2 = diemMonhoc2
+        this.diemMonhoc2 = diemMonhoc2;
     }
     HocVien (String ten, String diaChi, float diemMonhoc1, float diemMonhoc2 ){
         super(ten, diaChi);
